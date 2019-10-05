@@ -1,6 +1,11 @@
 #include <stdio.h>
 
 int main(){
-  printf("inizio\n");
-  printf("riga 2\n");
+  int c;
+  puts ("Enter text. Include a dot ('.') in a sentence to exit:");
+  do {
+    c=getchar();
+    putchar (c);
+  } while (c != '.');
+  return 0;
 }
